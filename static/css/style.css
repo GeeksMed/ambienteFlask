@@ -1,0 +1,391 @@
+body{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: #e3e3e3;
+	/*background-image: url(../img/bg4.jpg);
+	background-repeat: repeat-y;
+	background-size: cover;*/
+}
+
+/*TAMANHOS*/
+#cabecalho, #corpo, #rodape{
+    width: 1400px;	
+}
+#noticias, .sessao_conteudo, .sobre, .sessao_comentario{
+	width: 1030px;
+}
+#anuncios, .sessao_anuncios, .anuncio{
+	width: 340px;	
+}
+
+/*CABECALHO*/
+#cabecalho a{
+	/*background-color: #fff;*/
+	position: relative;
+    padding: 10px 0 10px 0;
+    float: left;
+	color: #054f77;
+	display: block;
+	border-radius: 1em;
+
+	text-align: left;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+#cabecalho a:visited{
+	/*background-color: #fff;*/
+	position: relative;
+    padding: 10px 0 10px 0;
+    float: left;
+	color: #054f77;
+	display: block;
+	border-radius: 1em;
+
+	text-align: left;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+#cabecalho h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 12%;
+}
+
+/*RODAPE*/
+#rodape{
+	margin-top: 20px;
+	background-color: #fff;
+	color: black;
+	text-align: center;
+    position: fixed;
+    bottom:-80px;
+    left:0;
+    padding: 20px 0 20px 0;
+    border-radius: 1em;
+}
+
+/*CORPO COMPLETO*/
+#corpo{
+	padding: 10px 0 10px 0;
+	display: block;
+}
+
+/*NOTICIAS*/
+#noticias{
+	position: relative;
+	float: left;
+	border-radius: 1em;
+	padding-bottom: 2%;
+	display: inline-block;
+}
+/*Sessao Conteudo*/
+.sessao_conteudo{
+	margin-top: 5px;
+	padding: 10px 0 10px 0;
+}
+
+.sobre{
+	margin-top: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+.sobre h3{
+	color: #f15a29;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.sobre h5{
+	color: #f15a29;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
+
+.sobre a{
+	margin-left: 10px;
+	color: #f15a29;
+	text-decoration: none;
+}
+
+.siteLink{
+	padding-left: 40px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#submitButtonCalc{
+	text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 1em;
+    background: #eee;
+    color: #f15a29;
+    margin: 0 0 2% 36.5%;
+}
+
+#submitButtonCalc:hover {
+    background: #ccc;
+    border: 2px solid #f15a29;
+    border-radius: 1em;
+}
+
+#calculadora div {
+	margin-bottom: 10px;
+	margin-left: 36.5%;
+}
+
+#calculadora label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+.radioB{
+    display: inline-block;
+    text-align: right;
+    margin-left: 155px;
+}
+
+#submitButtonCalculadora{
+	text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 1em;
+    background: #eee;
+    color: #f15a29;
+    margin: 0 0 2% 2%;
+}
+
+#submitButtonCalculadora:hover {
+    background: #ccc;
+    border: 2px solid #f15a29;
+    border-radius: 1em;
+}
+
+/*Sessao Comentario*/
+.sessao_comentario{
+	margin-top: 10px;
+	background-color: #fff;
+	padding: 10px 0 10px 0;	
+	border-radius: 1em;
+	margin-top: 23px;
+}
+.sessao_comentario h3{
+	color: #f15a29;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+    margin: 0 0 2% 2%;
+}
+
+.sessao_comentario label{
+	font-size: 18px;
+	text-align: right;
+    margin: 0 0 2% 2%;
+}
+
+.sessao_comentario input{
+	width: 50%;
+	padding: 1%;
+    margin: 0 0 2% 2%;
+}
+
+.comment-area{
+	width: 96%;
+    height: 100px;
+    margin: 0 0 2% 2%;
+}
+
+#submitbutton{
+	text-transform: uppercase;
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 1em;
+    background: #eee;
+    color: #f15a29;
+    margin: 0 0 2% 2%;
+}
+
+#submitbutton:hover {
+    background: #ccc;
+    border: 2px solid #f15a29;
+    border-radius: 1em;
+}
+
+/*ANUNCIOS*/
+#anuncios{
+	position: relative;
+	float: right;
+	border-radius: 1em;
+	padding-bottom: 2%;
+	display: inline-block;
+}
+
+.sessao_anuncios{
+	margin-top: 5px;
+	padding: 10px 0 10px 0;
+}
+
+.anuncio{
+	margin-top: 10px;
+    background-color: #fff;
+    padding: 10px 0 10px 0;
+    border-radius: 1em;
+}
+
+.img_insta{
+	width: 40px;
+}
+
+.anuncio a{
+	margin-left: 10px;
+	color: #f15a29;
+	text-decoration: none;
+}
+
+#bomb{
+	margin: -50px 0 0 65px;
+	color: #f15a29;
+	text-decoration: none;
+	position: absolute;
+}
+
+#anunc_cont{
+	position: fixed;
+    margin-top: 17px;
+}
+
+.anuncio h4{
+	margin: 0 0 0 2px;
+	color: #f15a29;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#anuncio_contato{
+	text-align: center;
+	font-size: 1rem;
+}
+
+.anuncio_pags {
+	margin: 10px 10px 0 10px; 
+	width: 320px;
+	z-index: 2;
+	border-radius: 1em;
+}
+
+.s1line span{
+	margin: 0 0 0 20px;
+	color: #f15a29;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    z-index: 1;
+    margin-top: 25%;
+	position: absolute;
+	width: 100%;
+	font-size: 2rem;	
+}
+
+.s2line span{
+	margin: 0 0 0 20px;
+	color: #f15a29;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    z-index: 1;
+    margin-top: 18%;
+	position: absolute;
+	width: 100%;
+	font-size: 2rem;	
+}
+
+.s3line span{
+	margin: 0 0 0 20px;
+	color: #f15a29;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    z-index: 1;
+    margin-top: 10%;
+	position: absolute;
+	width: 100%;
+	font-size: 2rem;	
+}
+
+.s1line, .s2line, .s3line{
+	height: 160px;
+}
+
+.parceiros{
+	margin: 15px 10px 0 10px; 
+	width: 320px;
+	z-index: 2;
+}
+
+#parceiro_uv{
+	margin-top: 5px;
+	width: 300px;
+}
+
+#parceiro_mp{
+	width: 210px;
+}
+
+.dropbtn {
+	background-color: #f15a29;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	min-width: 100px;
+	text-align: center;
+}
+
+.dropdown {
+	margin-top: 33px;
+	position: absolute;
+	display: inline-block;
+	min-width: 100px;
+}
+
+.dropdown-content {
+	margin-top: 45px;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: center;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 10px;
+	text-decoration: none;
+	display: block;
+	width: 40px;
+	min-width: 80px;
+	text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f15a29}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #054f77;
+}

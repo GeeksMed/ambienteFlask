@@ -1,0 +1,84 @@
+{% extends 'base.html'%}
+{% block title %}
+	Acompanhando Peso na Quarentena
+{% endblock %}
+
+{% block content %}
+	<div class="dropdown">
+		<button class="dropbtn">Menu</button>
+		<div class="dropdown-content">
+			<a href="{{ url_for('home')}}">Home</a>
+			<a href="{{ url_for('resultado')}}">Calculadora</a>
+			<a href="{{ url_for('contato')}}">Contato</a>
+		</div>
+	</div>
+	<div id="cabecalho">
+		<h2><a href="{{ url_for('home')}}">Acompanhando Peso na Quarentena</a></h2>
+	</div>
+	<div id="corpo">
+		<div id="noticias">
+			<div class="sessao_conteudo">
+				<div class="sobre">
+					<div name="calculadora" id="calculadora">
+						<h3>Calculadora IMC</h3>
+						<form name="formulario">
+							<div>
+								<label>Nome:</label>
+								<input type="text" name="nome">
+							</div>
+							<div>
+								<label>Qual seu sexo?</label><br>
+							    <input type="radio" name="sexo" class="radioB" value="fem">Feminino<br>
+							    <input type="radio" name="sexo" class="radioB" value="masc">Masculino<br>
+							</div>
+							<div>
+							    <label>Altura:</label>
+							    <input type="text" name="altura">
+							</div>
+							<div>
+							    <label>Peso:</label>
+							    <input type="text" name="peso">
+							</div>
+							<div>
+							    <label>Idade:</label>
+							    <input type="text" name="idade">
+							</div>
+							<div>
+							    <button onclick="calculaIMC();" value="Calcular" id="submitButtonCalculadora">Calcular</button>
+								<button type="reset" id="submitButtonCalculadora">Apagar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="anuncios">
+			<div class="sessao_anuncios">
+				<div class="anuncio">
+					<h4>Contatos de Emergência</h4>
+				</div>
+				<div class="anuncio">
+					<a href="http://www.cbmerj.rj.gov.br/">
+					<img src="{{ url_for('static', filename='img/logo_bolacha.png')}}" alt="login" class="img_insta">
+					<p id="bomb"><strong>CBMERJ</strong><br>Corpo de Bombeiros do Rio de Janeiro<br>Telefone: 193</p></a>
+				</div>
+				<div class="anuncio">
+					<a href="http://www.policiamilitar.rj.gov.br/">
+					<img src="{{ url_for('static', filename='img/pmerj.png')}}" alt="login" class="img_insta">
+					<p id="bomb"><strong>PMERJ</strong><br>Polícia Militar Estadual do Rio de Janeiro<br>Telefone: 190</p></a>
+				</div>
+				<div class="anuncio">
+					<h4>Contatos do Site</h4>
+				</div>
+				<div class="anuncio">
+					<a href="contato.html">
+					<img src="{{ url_for('static', filename='img/email.jpg')}}" alt="login" class="img_insta">
+					<p id="bomb"><strong id="anunc_cont">Entre em contato Conosco</strong></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rodape">
+		<p>Todos os direitos reservados &copy; - Responsável: Germain Rocha</p>
+	</div>
+{% endblock %}

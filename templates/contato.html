@@ -1,0 +1,72 @@
+{% extends 'base.html'%}
+{% block title %}
+	Acompanhando Peso na Quarentena
+{% endblock %}
+
+{% block content %}
+	<div class="dropdown">
+		<button class="dropbtn">Menu</button>
+		<div class="dropdown-content">
+			<a href="{{ url_for('home')}}">Home</a>
+			<a href="{{ url_for('resultado')}}">Calculadora</a>
+			<a href="{{ url_for('contato')}}">Contato</a>
+		</div>
+	</div>
+	<div id="cabecalho">
+		<h2><a href="{{ url_for('home')}}">Acompanhando Peso na Quarentena</a></h2>
+	</div>
+	<div id="corpo">
+		<div id="noticias">
+			<div class="sessao_comentario" id="envioEmail">
+				<form >
+					<h3>Deixe um Comentário</h3>
+					<div>
+						<textarea id="comment" class="comment-area"></textarea>
+					</div>
+					<div>
+						<label for="nome">Nome(obrigatório):</label>
+						<br>
+						<input type="text" id="nome" placeholder="Nome Completo" class="input_campo"/>
+					</div>
+					<!--Contato-->
+					<div>
+						<label for="email">E-mail:</label>
+						<br>
+						<input type="email" id="email" placeholder="seuemail@email.com" class="input_campo"/>
+					</div>
+					<div>
+						<button type="submit" id="submitbutton">Enviar sua mensagem</button><!-- onclick="enviaEmail()" -->
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="anuncios">
+			<div class="sessao_anuncios">
+				<div class="anuncio">
+					<h4>Contatos de Emergência</h4>
+				</div>
+				<div class="anuncio">
+					<a href="http://www.cbmerj.rj.gov.br/">
+					<img src="{{ url_for('static', filename='img/logo_bolacha.png')}}" alt="login" class="img_insta">
+					<p id="bomb"><strong>CBMERJ</strong><br>Corpo de Bombeiros do Rio de Janeiro<br>Telefone: 193</p></a>
+				</div>
+				<div class="anuncio">
+					<a href="http://www.policiamilitar.rj.gov.br/">
+					<img src="{{ url_for('static', filename='img/pmerj.png')}}" alt="login" class="img_insta">
+					<p id="bomb"><strong>PMERJ</strong><br>Polícia Militar Estadual do Rio de Janeiro<br>Telefone: 190</p></a>
+				</div>
+				<div class="anuncio">
+					<h4>Contatos do Site</h4>
+				</div>
+				<div class="anuncio">
+					<a href="contato.html">
+					<img src="{{ url_for('static', filename='img/email.jpg')}}" alt="login" class="img_insta">
+					<p id="bomb"><strong id="anunc_cont">Entre em contato Conosco</strong></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="rodape">
+		<p>Todos os direitos reservados &copy; - Responsável: Germain Rocha</p>
+	</div>
+{% endblock %}
